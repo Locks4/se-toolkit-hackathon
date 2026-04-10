@@ -40,7 +40,7 @@ fi
 echo ""
 echo -e "${YELLOW}[3/5] Installing Backend dependencies...${NC}"
 cd backend
-pip3 install -r requirements.txt -q
+pip3 install -r requirements.txt --break-system-packages -q
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✓ Backend dependencies installed!${NC}"
 else
@@ -87,6 +87,6 @@ echo ""
 echo "  ./start.sh"
 echo ""
 echo "Then access the app at:"
-echo "  http://YOUR_VM_IP:80"
+echo "  http://YOUR_VM_IP:3000"
 echo ""
 echo "========================================"
