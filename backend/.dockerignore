@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.db
+.git
+.gitignore
+.env
+.venv
+*.md
+tests/
+*.egg-info/
+goal_tracker.db
